@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Blog",
+    "url": "https://github.com/PolluxOscarabus/polluxoscarabus.github.io",
+    "image": "blog.png",
+    "article": "Blog-Jekyll",
+    "summary": "Development of a static blog published as GitHub Pages using Jekyll engine.\
+                The front-end of the blog is designed using Bootstrap framework."
+  },
+  {
+    "name": "Blog",
+    "url": "https://polluxoscarabus.github.io",
+    "image": "blog.png",
+    "article": "Create-Blog-Jekyll",
+    "summary": "Development of a static blog published as GitHub Pages using Jekyll engine.\
+                The front-end of the blog is designed using Bootstrap framework."
+  },
+  {
+    "name": "Blog",
+    "url": "https://polluxoscarabus.github.io",
+    "image": "blog.png",
+    "article": "Create-Blog-Jekyll",
+    "summary": "Development of a static blog published as GitHub Pages using Jekyll engine.\
+                The front-end of the blog is designed using Bootstrap framework."
+  },
+  {
+    "name": "Blog",
+    "url": "https://polluxoscarabus.github.io",
+    "image": "blog.png",
+    "article": "Create-Blog-Jekyll",
+    "summary": "Development of a static blog published as GitHub Pages using Jekyll engine.\
+                The front-end of the blog is designed using Bootstrap framework."
+  }
+]

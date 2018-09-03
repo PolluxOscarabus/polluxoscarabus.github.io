@@ -1,0 +1,15 @@
+---
+layout: default
+title: Blog
+---
+
+<div class="col-xs-12">
+  <h1 class="page-header">Blog posts</h1>
+  {% for post in site.posts %}
+    <h2>{{ post.title | escape }}
+      <small><span class="post-meta">- {{ post.date | date: "%b %-d, %Y" }}</span></small>
+    </h2>
+    {{ post.excerpt }}
+    <a href="{{ post.url | relative_url }}" type="button" class="btn btn-info">Read more...</a>
+  {% endfor %}
+</div>

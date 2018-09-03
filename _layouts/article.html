@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="col-xs-12">
+    <h1 class="article-header">{{ page.title }}</h1>
+    <p>
+        <span class="glyphicon glyphicon-time"></span><span class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</span>
+        &nbsp;<span class="glyphicon glyphicon-book"></span>
+        {% for valcategory in page.category %}
+          <span class="label label-primary">&nbsp;{{ valcategory | escape }}</span>
+        {% endfor %}
+        &nbsp;<span class="glyphicon glyphicon-tags"></span>
+        {% for valtag in page.tag %}
+          <span class="label label-info">&nbsp;{{ valtag | escape }}</span>
+        {% endfor %}
+    </p>
+  
+  <hr />
+  
+  {{ content }}
+  
+  {% if site.disqus.shortname %}
+   {% include disqus_comments.html %}
+  {% endif %}
+
+</div>

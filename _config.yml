@@ -1,0 +1,26 @@
+####################
+# Site configuration
+####################
+
+baseurl: ""
+url: https://polluxoscarabus.github.io
+collections:
+  articles:
+    output: true
+    
+####################
+# Build settings
+####################
+
+permalink: /:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
+theme: jekyll-theme-minimal
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md

@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="row">
+  <div class="col-xs-12">
+    <div class="jumbotron">
+      <h1 style="text-align: center">Hello</h1>
+      <p>Welcome to my personal blog. I use this website to store articles, tutorials, and presentations
+      of my projects.</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h2 class="page-header">Recent articles</h2>
+    <ul>
+      {% for article in site.articles reversed limit:5%}
+        <li>
+          <h3><a href="{{ article.url | relative_url }}">{{ article.title | escape }}</a></h3>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

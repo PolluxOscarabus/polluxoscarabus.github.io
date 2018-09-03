@@ -1,0 +1,27 @@
+---
+layout: default
+title: Articles
+---
+<div class="col-xs-12">
+  <h1 class="page-header">List of articles</h1>
+  <ul>
+    {% for article in site.articles reversed%}
+      <li>
+        <h3 style="margin-bottom: 0;"><a href="{{ article.url | relative_url }}">{{ article.title | escape }}</a></h3>
+        <p>
+          <span class="glyphicon glyphicon-time"></span><span class="post-meta">{{ article.date | date: "%b %-d, %Y" }}</span>
+          &nbsp;
+          <span class="glyphicon glyphicon-book"></span>
+          {% for valcategory in article.category %}
+            <span class="label label-primary">&nbsp;{{ valcategory | escape }}</span>
+          {% endfor %}
+          &nbsp;
+          <span class="glyphicon glyphicon-tags"></span>
+          {% for valtag in article.tag %}
+            <span class="label label-info">&nbsp;{{ valtag | escape }}</span>
+          {% endfor %}
+        </p>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

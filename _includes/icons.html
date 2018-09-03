@@ -1,0 +1,7 @@
+{% for logo in site.data.logos %}
+  <li style="display:inline ;">
+    <a style="text-decoration: none;" target="_blank" href="{{ logo.url }}/{{ logo.username }}">
+      <img src="{{ site.baseurl }}/assets/images/logos/{{ logo.image }}" alt="{{ logo.image }}" /> &nbsp;
+    </a>
+  </li>
+{% endfor %}
