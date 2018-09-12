@@ -130,6 +130,12 @@ A file is moved to be renamed
 git mv **OLD_NAME** **NEW_NAME** 
 ```
 
+### Remove untracked files
+Delete untracked files from working tree
+```
+git clean -i
+```
+
 ### Reset file to state of its latest staging
 ```
 git checkout -- **FILE_NAME**
